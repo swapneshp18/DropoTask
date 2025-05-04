@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanban Task Board
 
-## Getting Started
+A simple Kanban board built using React (with JSX), `@dnd-kit` for drag-and-drop functionality, and a backend server for managing tasks. This project provides a drag-and-drop interface for managing tasks across three columns: "To Do", "In Progress", and "Done".
 
-First, run the development server:
+## Features
+
+- **Drag and Drop**: Use `@dnd-kit` to drag and drop tasks between columns.
+- **Task Management**: Add, update, and organize tasks easily.
+- **Responsive Design**: Optimized for mobile and desktop views.
+- **CRUD Operations**: Interact with a backend API for fetching, updating, and storing tasks.
+
+## Architecture
+
+This application consists of the following parts:
+
+1. **Frontend (React)**: The user interface is built with React, utilizing hooks like `useState` and `useEffect` to manage state and lifecycle events. The Kanban board uses drag-and-drop functionality provided by `@dnd-kit/core`.
+
+2. ** Backend (JSON Server) **: A simple backend stores tasks. It serves tasks from a JSON file and allows CRUD operations. It runs on `localhost:4000`.
+
+3. **Styling**: The app uses Tailwind CSS to style the user interface and ensure a responsive layout.
+
+4. **Drag-and-Drop**: The drag-and-drop functionality is powered by `@dnd-kit`. Tasks can be dragged between three columns: "To Do", "In Progress", and "Done".
+
+## Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- Node.js (v14 or higher)
+- npm or yarn
+- JSON Server (for the backend)
+
+## Instructions to Run the Project Locally
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/swapneshp18/DropoTask.git
+cd DropoTask
