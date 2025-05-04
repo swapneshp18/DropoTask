@@ -1,0 +1,58 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Buy groceries",
+      "description": "Milk, eggs, bread, and vegetables",
+      "status": "inprogress"
+    },
+    {
+      "id": "2",
+      "title": "Clean the house",
+      "description": "Vacuum, dust, and organize shelves",
+      "status": "done"
+    },
+    {
+      "id": "3",
+      "title": "Finish reading book",
+      "description": "Read the last two chapters of the novel",
+      "status": "done"
+    },
+    {
+      "id": "4",
+      "title": "Workout",
+      "description": "30-minute cardio session at home",
+      "status": "todo"
+    },
+    {
+      "id": "5",
+      "title": "Call plumber",
+      "description": "Fix leaking kitchen faucet",
+      "status": "done"
+    },
+    {
+      "id": "6",
+      "title": "Write blog post",
+      "description": "Draft a new post on time management tips",
+      "status": "inprogress"
+    },
+    {
+      "id": "7",
+      "title": "Respond to emails",
+      "description": "Reply to client and team updates",
+      "status": "inprogress"
+    },
+    {
+      "id": "8",
+      "title": "Update resume",
+      "description": "Add recent work experience and skills",
+      "status": "todo"
+    },
+    {
+      "id": "9",
+      "title": "Learn Programming",
+      "description": "Start with web development",
+      "status": "todo"
+    }
+  ]
+}
