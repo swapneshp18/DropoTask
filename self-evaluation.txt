@@ -1,0 +1,31 @@
+This project is a drag-and-drop Kanban board built using Next.js, Tailwind CSS, and @dnd-kit/core. It allows users to view, add, and move tasks between three columns: To Do, In Progress, and Done. Tasks are fetched from and updated via a REST API, enabling real-time syncing through polling. The project meets the core functional requirements, with a clean UI and responsive layout.
+Implemented real-time drag-and-drop functionality.
+
+UI is intuitive and mobile-friendly using Tailwind CSS.
+
+Data is persistently managed through a backend API (with fetch + PATCH/POST requests).
+
+The drag-and-drop feature breaks when newly added tasks are not structured properly.
+
+Error handling is minimal.
+
+Areas for improvement:
+
+TypeScript integration is partial and could be stricter.
+
+Code structure can be improved by splitting logic and UI into separate layers.
+
+The handleDragEnd logic is functional but tightly coupled with the API structure, making it hard to adapt.
+
+State updates (especially after new task creation) aren’t always reliable — this causes issues with drag-and-drop for newly added items.
+
+Refactor drag-and-drop logic using useSortable from @dnd-kit/sortable for better UX.
+
+Implement React Query or SWR to better handle server state and eliminate the need for polling.
+
+Add optimistic updates to improve the perceived performance.
+
+Next.js	8
+Tailwind CSS	9
+JavaScript	7
+API Integration	7
